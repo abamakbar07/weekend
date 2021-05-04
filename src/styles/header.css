@@ -1,0 +1,35 @@
+.Header {
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: #000000;
+}
+
+.Content {
+   padding-top: 17px;
+   padding-bottom: 17px;
+}
+
+.Bitmap {
+   width: 33px;
+   height: 33px;
+   object-fit: contain;
+}
+
+.Greeting .Time {
+   width: auto;
+   height: 14px;
+   margin: 0 0 0 13px;
+   font-size: 12px;
+   font-weight: normal;
+}
+
+.Greeting .User {
+   width: auto;
+   height: 19px;
+   margin: 0px 0px 0 13px;
+   font-size: 16px;
+   font-weight: bold;
+}
