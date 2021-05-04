@@ -1,0 +1,50 @@
+.Footer {
+   height: 67px;
+   color: white;
+   font-family: 'Work Sans', sans-serif;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   background-color: #0b24fb;
+}
+
+.Container {
+   padding: 24px;
+}
+
+.wknd2020 {
+   width: 98px;
+   height: 19px;
+   font-size: 16px;
+   font-weight: bold;
+   letter-spacing: normal;
+   color: #fff;
+}
+
+.wknd2020 .text-style-1 {
+   font-weight: normal;
+   color: #fff;
+}
+
+.wknd2020 .text-style-1:hover {
+   text-decoration: none;
+}
+
+
+.Rectengle {
+   width: 126px;
+   height: 24px;
+   padding: 3px 10px 5px;
+   border-radius: 12px;
+   border: solid 1px #fff;
+}
+
+.alpha-version-01 {
+   width: 106px;
+   height: 16px;
+   font-size: 14px;
+   font-weight: 300;
+   letter-spacing: normal;
+   text-align: center;
+   color: #fff;
+}
