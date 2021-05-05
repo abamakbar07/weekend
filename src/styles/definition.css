@@ -1,0 +1,41 @@
+.Definition {
+   margin-top: 100px;
+}
+
+.Definition .Content {
+   width: 40rem;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.Content .Main {
+   margin-top: 0px;
+   font-size: 21px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.52;
+   letter-spacing: -0.75px;
+   color: #000000;
+}
+
+.Content .Main span {
+   font-weight: bold;
+   color: var(--rich-blue);
+}
+.Content .Sign {
+   margin-top: 20px;
+   font-size: 21px;
+   font-weight: 600;
+   font-stretch: normal;
+   font-style: italic;
+   line-height: normal;
+   letter-spacing: normal;
+   color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+   .Definition .Content {
+      width: 15rem;
+   }
+}
