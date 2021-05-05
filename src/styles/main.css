@@ -1,15 +1,16 @@
 .Main {
-   margin-top: 10rem;
+   margin-top: 5rem;
    color: #fff;
    font-stretch: normal;
    letter-spacing: normal;
 }
 
 .Main h1 {
-   font-size: 62px;
-   font-weight: bolder;
+   font-size: 52px;
+   font-weight: 1000;
    font-style: normal;
    line-height: 0.82;
+   padding-bottom: 1rem;
 }
 
 .Main a {

@@ -15,4 +15,6 @@
   height: 100vh;
   background: var(--bgmain);
   background-image: url("./assets/bg-1.svg");
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
