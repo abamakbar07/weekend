@@ -1,4 +1,5 @@
 import React from 'react'
+import "../styles/submain.css"
 
 const Submain = (props) => {
    return (
