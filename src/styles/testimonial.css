@@ -19,10 +19,13 @@
 .Content .card {
    width: 247px;
    height: 140px;
+   min-width: unset;
    margin: 10px;
 }
 
 .ContentTitle {
+   white-space: nowrap;
+   text-overflow: ellipsis;
    width: 151px;
    height: 38px;
    margin: 0 56px 20px 0;
@@ -40,4 +43,7 @@
    font-weight: normal;
    letter-spacing: -0.43px;
    color: #000000;
+}
+
+@media only screen and (max-width: 600px) {
 }
