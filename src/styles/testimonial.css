@@ -5,8 +5,7 @@
    background: linear-gradient(180deg, var(--bgmain) 50%, var(--bgsecond) 50%);
 }
 
-.Title {
-   width: 188px;
+.Testimonial .Title {
    height: 38px;
    text-shadow: 0 20px 30px rgba(249, 131, 171, 0.7);
    font-size: 32px;

@@ -1,3 +1,32 @@
 .Submain {
-   
+   background: var(--bgsecond);
+}
+
+.Submain .Title {
+   height: 38px;
+   font-size: 32px;
+   font-weight: 900;
+   letter-spacing: normal;
+   text-align: center;
+   color: #fff;
+   margin: auto;
+}
+
+.Submain .Content {
+   width: 619px;
+   font-size: 18px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.5;
+   letter-spacing: -0.64px;
+   text-align: center;
+   color: #fff;
+   margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+   .Submain .Content {
+      width: auto;
+   }
 }
