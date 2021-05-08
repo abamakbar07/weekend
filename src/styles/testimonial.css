@@ -16,6 +16,27 @@
    margin: auto;
 }
 
+.Content .Container {
+   overflow-x: hidden;
+}
+
+.Button .Deactive {
+   opacity: .3;
+}
+
+.Content .ButtonLeft img {
+   position: absolute;
+   top: 50%;
+   right: 10%;
+   transform: rotate(180deg);
+}
+
+.Content .ButtonRight img {
+   position: absolute;
+   top: 50%;
+   left: 10%;
+}
+
 .Content .card {
    width: 247px;
    height: 140px;
@@ -46,4 +67,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+   .Content .Button {
+      display: none;
+   }
 }

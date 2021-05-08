@@ -6,6 +6,7 @@ import Submain from './pages/Submain';
 import Main from './pages/Main';
 import Testimonial from './pages/Testimonial';
 import Definition from './pages/Definition';
+import Helptips from './pages/Helptips';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         title="You’re all set."
         content="The wise man therefore always holds in these matters to this principle of selection."
       />
+      <Helptips />
       {/* <Footer /> */}
     </div>
   );
