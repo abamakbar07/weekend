@@ -2,6 +2,7 @@
    background: var(--bgsecond);
    font-stretch: normal;
    font-style: normal;
+   padding-bottom: 67px;
 }
 
 .Submain .Title {
@@ -29,10 +30,15 @@
    .Submain {
       margin-top: -1px;
    }
+
    .Submain .Content {
       text-align: left;
       font-size: 16px;
       letter-spacing: -0.57px;
       width: auto;
+   }
+
+   .Submain .Title {
+      text-align: left;
    }
 }

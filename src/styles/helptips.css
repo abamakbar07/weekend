@@ -1,13 +1,20 @@
 .Helptips {
    background: #000;
+   padding-bottom: 20px;
    background-image: url('../assets/pea.svg');
    background-repeat: no-repeat;
-   padding-top: 20px;
-   padding-bottom: 20px;
+   background-position-x: 80vw;
+   padding-bottom: 127px;
+}
+
+.Helptips .col {
+   padding-top: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
 }
 
 .Helptips .Title {
-   height: 38px;
+   /* height: 38px; */
    font-size: 32px;
    font-weight: 900;
    letter-spacing: normal;
@@ -16,19 +23,33 @@
    margin: auto;
 }
 
-.Helptips .container {
+.Helptips .Container {
    display: flex;
 }
 
+.Helptips .tittle.container {
+   display: flex;
+}
+
+.Helptips .card-title.h5 {
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-right: 16px;
+}
+
 .Helptips .card {
-   width: 311px;
-   height: 176px;
+   border: none;
+}
+
+.Helptips .card-img {
+   border-radius: unset;
 }
 
 .Helptips .card-img-overlay {
    top: auto;
    height: 72px;
    background: rgba(0, 0, 0, 0.5);
+   border-radius: unset;
 }
 
 .Helptips .card-title {
@@ -43,7 +64,18 @@
 }
 
 @media only screen and (max-width: 600px) {
-   .Helptips .container {
+   .Helptips {
+      margin-top: -1px;
+      background-image: unset;
+      padding-bottom: 67px;
+   }
+
+   .Helptips .Container {
       display: block;
    }
+
+  .Helptips .Title {
+     padding-left: 15px;
+    text-align: left;
+  }
 }
