@@ -1,6 +1,19 @@
 .Helptips {
+   background: #000;
+   background-image: url('../assets/pea.svg');
+   background-repeat: no-repeat;
    padding-top: 20px;
    padding-bottom: 20px;
+}
+
+.Helptips .Title {
+   height: 38px;
+   font-size: 32px;
+   font-weight: 900;
+   letter-spacing: normal;
+   text-align: center;
+   color: #fff;
+   margin: auto;
 }
 
 .Helptips .container {

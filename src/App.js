@@ -30,22 +30,30 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       <Main />
+
       <Definition />
+
       <Testimonial title="TESTIMONIAL" content={testimonial} />
+
       <Submain
         title="POV"
         content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nesciunt quaerat sequi perferendis facere corrupti odio temporibus consequuntur, modi sapiente autem obcaecati quam vel ratione ea dolorem ut explicabo laudantium."
       />
+
       <Submain
         title="Resource"
         content="These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best"
       />
+
+      <Helptips />
+
       <Submain
         title="You’re all set."
         content="The wise man therefore always holds in these matters to this principle of selection."
       />
-      <Helptips />
+
       {/* <Footer /> */}
     </div>
   );

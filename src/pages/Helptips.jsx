@@ -8,43 +8,46 @@ import image3 from '../assets/helpTips/denounce/image.png'
 
 const Helptips = () => {
    return (
-     <div className="Helptips text-center">
-       <Container>
-         <Col>
-            <Card className="bg-dark text-white">
-               <Card.Img src={image1} alt="Card image" />
-               <Card.ImgOverlay>
-                  <Container className="tittle">
+      <div className="Helptips text-center">
+         <div className="Title">
+            Help & Tips
+         </div>
+         <Container className="pt-4">
+            <Col>
+               <Card className="bg-dark text-white">
+                  <Card.Img src={image1} alt="Card image" />
+                  <Card.ImgOverlay>
+                     <Container className="tittle">
                      <Card.Title>Start quickly with simple steps</Card.Title>
                      <img className="ml-auto" src={arrowButton} />
-                  </Container>
-               </Card.ImgOverlay>
-            </Card>
-         </Col>
-         <Col>
-            <Card className="bg-dark text-white">
-               <Card.Img src={image1} alt="Card image" />
-               <Card.ImgOverlay>
-                  <Container className="tittle">
+                     </Container>
+                  </Card.ImgOverlay>
+               </Card>
+               </Col>
+               <Col>
+               <Card className="bg-dark text-white">
+                  <Card.Img src={image2} alt="Card image" />
+                  <Card.ImgOverlay>
+                     <Container className="tittle">
                      <Card.Title>Start quickly with simple steps</Card.Title>
                      <img className="ml-auto" src={arrowButton} />
-                  </Container>
-               </Card.ImgOverlay>
-            </Card>
-         </Col>
-         <Col>
-            <Card className="bg-dark text-white">
-               <Card.Img src={image1} alt="Card image" />
-               <Card.ImgOverlay>
-                  <Container className="tittle">
+                     </Container>
+                  </Card.ImgOverlay>
+               </Card>
+               </Col>
+               <Col>
+               <Card className="bg-dark text-white">
+                  <Card.Img src={image3} alt="Card image" />
+                  <Card.ImgOverlay>
+                     <Container className="tittle">
                      <Card.Title>Start quickly with simple steps</Card.Title>
                      <img className="ml-auto" src={arrowButton} />
-                  </Container>
-               </Card.ImgOverlay>
-            </Card>
-         </Col>
-       </Container>
-     </div>
+                     </Container>
+                  </Card.ImgOverlay>
+               </Card>
+            </Col>
+         </Container>
+      </div>
    );
 }
 
