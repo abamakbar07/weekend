@@ -20,7 +20,7 @@ function App() {
 
       <Definition />
 
-      <Testimonial title="TESTIMONIAL" content={testimonial} />
+      <Testimonial title="Testimonial" content={testimonial} />
 
       <Submain 
         title={submain[0].title} 

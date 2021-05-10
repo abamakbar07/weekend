@@ -24,6 +24,10 @@
    opacity: .3;
 }
 
+.Testimonial .Button img:hover {
+   cursor: pointer;
+}
+
 .Content .ButtonLeft img {
    position: absolute;
    top: 50%;
@@ -74,5 +78,9 @@
    .Testimonial .Title {
       padding-left: 15px;
       text-align: left;
+   }
+
+   .Content .Container {
+      overflow-x: scroll;
    }
 }

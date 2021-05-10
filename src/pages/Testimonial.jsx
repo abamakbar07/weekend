@@ -42,8 +42,12 @@ const Testimonial = (props) => {
        <div className="Title">{props.title}</div>
        <div className="Content text-white">
          <Container fluid className="d-flex p-0">
-           <Col className="Button ButtonLeft" onClick={scrollLeft}>
-             <img className={scroll.left} src={arrowButton} />
+           <Col className="Button ButtonLeft">
+             <img
+               className={scroll.left}
+               src={arrowButton}
+               onClick={scrollLeft}
+             />
            </Col>
            <Col
              md={6}
@@ -64,8 +68,12 @@ const Testimonial = (props) => {
                </Card>
              ))}
            </Col>
-           <Col className="Button ButtonRight" onClick={scrollRight}>
-             <img className={scroll.right} src={arrowButton} />
+           <Col className="Button ButtonRight">
+             <img
+               className={scroll.right}
+               src={arrowButton}
+               onClick={scrollRight}
+             />
            </Col>
          </Container>
        </div>
