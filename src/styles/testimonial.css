@@ -12,7 +12,7 @@
    font-weight: 900;
    letter-spacing: normal;
    text-align: center;
-   color: #fff;
+   color: var(--main);
    margin: auto;
 }
 
@@ -53,7 +53,7 @@
    font-size: 32px;
    font-weight: 900;
    letter-spacing: normal;
-   color: #000000;
+   color: var(--second);
 }
 
 .ContentContent {
@@ -63,7 +63,7 @@
    font-size: 12px;
    font-weight: normal;
    letter-spacing: -0.43px;
-   color: #000000;
+   color: var(--second);
 }
 
 @media only screen and (max-width: 600px) {

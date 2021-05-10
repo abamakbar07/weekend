@@ -16,7 +16,7 @@
    font-style: normal;
    line-height: 1.52;
    letter-spacing: -0.75px;
-   color: #000000;
+   color: var(--second);
 }
 
 .Content .Main span {
@@ -31,7 +31,7 @@
    font-style: italic;
    line-height: normal;
    letter-spacing: normal;
-   color: #fff;
+   color: var(--main);
 }
 
 @media only screen and (max-width: 600px) {

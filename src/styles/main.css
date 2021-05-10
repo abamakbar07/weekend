@@ -1,6 +1,6 @@
 .Main {
    margin-top: 5rem;
-   color: #fff;
+   color: var(--main);
    font-stretch: normal;
    letter-spacing: normal;
 }
@@ -38,9 +38,9 @@
    padding: 20px 83.5px 19px;
    border-radius: 29px;
    box-shadow: 0 20px 30px 0 #ff878780;
-   background-color: #fff;
+   background-color: var(--main);
    font-size: 16px;
-   color: #000;
+   color: var(--second);
    font-weight: normal;
    font-style: normal;
    line-height: normal;

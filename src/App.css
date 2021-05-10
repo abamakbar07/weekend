@@ -1,12 +1,14 @@
 :root {
+  --main: #fff;
+  --second: #000;
   --bgmain: #eebece;
   --bgsecond: #000000;
   --rich-blue: #0b24fb;
 }
 
 #app {
-  --main-color: var(--main);
-  --second-color: var(--second);
+  /* --main-color: var(--main);
+  --second-color: var(--second); */
   /* filter: invert(1) hue-rotate(180deg); */
 }
 

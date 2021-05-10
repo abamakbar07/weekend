@@ -1,6 +1,6 @@
 .Footer {
    height: 67px;
-   color: white;
+   color: var(--main);
    font-stretch: normal;
    font-style: normal;
    line-height: normal;
@@ -17,12 +17,12 @@
    font-size: 16px;
    font-weight: bold;
    letter-spacing: normal;
-   color: #fff;
+   color: var(--main);
 }
 
 .wknd2020 .text-style-1 {
    font-weight: normal;
-   color: #fff;
+   color: var(--main);
 }
 
 .wknd2020 .text-style-1:hover {
@@ -35,7 +35,7 @@
    height: 24px;
    padding: 3px 10px 5px;
    border-radius: 12px;
-   border: solid 1px #fff;
+   border: solid 1px var(--main);
 }
 
 .alpha-version-01 {
@@ -45,7 +45,7 @@
    font-weight: unset;
    letter-spacing: normal;
    text-align: center;
-   color: #fff;
+   color: var(--main);
 }
 
 /* @media only screen and (max-width: 600px) {
