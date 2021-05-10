@@ -13,6 +13,7 @@ const Submain = (props) => {
                {props.content}
             </div>
          </Col>
+         <img className="Legoimage" src={props.image} width={183} />
       </div>
    ) 
 }

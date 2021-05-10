@@ -1,8 +1,15 @@
 .Submain {
+   position: relative;
    background: var(--bgsecond);
    font-stretch: normal;
    font-style: normal;
    padding-bottom: 67px;
+}
+
+.Submain .Legoimage {
+   position: absolute;
+   left: 0;
+   bottom: 0;
 }
 
 .Submain .Title {
@@ -17,6 +24,7 @@
 
 .Submain .Content {
    width: 619px;
+   height: 135px;
    font-size: 18px;
    font-weight: normal;
    line-height: 1.5;
@@ -40,5 +48,9 @@
 
    .Submain .Title {
       text-align: left;
+   }
+
+   .Submain .Legoimage {
+      position: relative;
    }
 }

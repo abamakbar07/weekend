@@ -1,5 +1,6 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import lego3 from './assets/lego3/group-3.png'
 import Footer from './pages/Footer';
 import Header from './pages/Header';
 import Submain from './pages/Submain';
@@ -27,6 +28,7 @@ function App() {
         "Unless you have a truly unique product, it will be very hard to differentiate and gain brand traction",
     },
   ];
+
   return (
     <div className="App">
       <Header />
@@ -50,11 +52,12 @@ function App() {
       <Helptips />
 
       <Submain
+        image={lego3}
         title="You’re all set."
         content="The wise man therefore always holds in these matters to this principle of selection."
       />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
