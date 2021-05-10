@@ -6,6 +6,10 @@
    padding-bottom: 67px;
 }
 
+.Submain.imageProps {
+   padding-bottom: 0px;
+}
+
 .Submain .Legoimage {
    position: absolute;
    left: 0;

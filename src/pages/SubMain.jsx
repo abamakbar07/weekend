@@ -3,10 +3,14 @@ import { Col } from 'react-bootstrap'
 import "../styles/submain.css"
 
 const Submain = (props) => {
-   const [windowWidth, setWindowWidth] = useState("67px")
+   const [imageProps, setImageProps] = useState("Submain")
 
    const handleWindowResize = useCallback((event) => {
-      window.innerWidth > 599 ? setWindowWidth("67px") : setWindowWidth("0px")
+      props.image
+        ? window.innerWidth > 599
+          ? setImageProps("Submain")
+          : setImageProps("Submain imageProps")
+        : setImageProps("Submain");
    }, []); 
 
    useEffect(() => {
@@ -18,7 +22,7 @@ const Submain = (props) => {
    }, [handleWindowResize]);
 
    return (
-      <div className="Submain" style={{paddingBottom: windowWidth}}>
+      <div className={imageProps}>
          <Col md={12}>
             <div className="Title">
                {props.title}
