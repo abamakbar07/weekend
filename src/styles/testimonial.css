@@ -23,13 +23,6 @@
    padding-top: 69px;
 }
 
-
-.Testimonial .Oval {
-   z-index: 100;
-   position: absolute;
-   /* left: 0; */
-}
-
 .Content .Container {
    overflow-x: hidden;
 }

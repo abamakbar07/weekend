@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
+import { Card, Col, Container } from 'react-bootstrap'
 import "../styles/helptips.css"
 import arrowButton from '../assets/oval-icon.svg'
 import image1 from '../assets/helpTips/start/image.png'
