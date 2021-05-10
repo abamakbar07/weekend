@@ -39,6 +39,7 @@
 
 .Helptips .card {
    border: none;
+   cursor: pointer;
 }
 
 .Helptips .card-img {
