@@ -1,10 +1,24 @@
-import React, { useState } from 'react'
-import { Card, Col, Container } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react'
+import { Card, Col, Container, Spinner } from 'react-bootstrap';
 import "../styles/testimonial.css"
 import arrowButton from '../assets/oval-icon.svg'
+import { API } from '../config/api';
 
-const Testimonial = (props) => {
-  const testimonial = props.content
+const Testimonial = () => {
+  const [loading, setLoading] = useState(true)
+  const [testimonial, setTestimonial] = useState();
+
+  const getTestimonial = async () => {
+    try {
+      setLoading(true)
+      const result = await API.get("/testimonial");
+      setTestimonial(result.data)
+      setLoading(false)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const [scroll, setScroll] = useState({
     left: "Active",
     right: "Active",
@@ -16,7 +30,7 @@ const Testimonial = (props) => {
           left: "Deactive",
           right: "Active",
         });
-    } else if (e.target.scrollLeft >= 125 ) {
+    } else if (e.target.scrollLeft >= 650 ) {
         setScroll({
           left: "Active",
           right: "Deactive",
@@ -36,13 +50,17 @@ const Testimonial = (props) => {
   const scrollRight = () => {
     document.getElementById("Container").scrollLeft += 125;
   }
+
+  useEffect(() => {
+    getTestimonial();
+  }, [])
   
   return (
     <div className="Testimonial text-center">
       {/* <img className="Oval" src={oval} /> */}
       <div className="Title">
-        <div className="text">
-          {props.title} 
+        <div className="text" onClick={() => console.log(setLoading(false))}>
+          Testimonial
         </div>
       </div>
       <div className="Content text-white">
@@ -60,18 +78,32 @@ const Testimonial = (props) => {
             onScroll={scrollEvent}
             className="d-flex Container"
           >
-            {testimonial.map((listTestimonial) => (
+            {loading ? (
               <Card className="bg-white border-0 pb-5">
-                <Card.Body className="text-left pt-2">
-                  <Card.Title className="ContentTitle">
-                    {listTestimonial.title}
-                  </Card.Title>
-                  <Card.Text className="ContentContent">
-                    {listTestimonial.content}
-                  </Card.Text>
-                </Card.Body>
+                <div className="Loading">
+                  <Spinner
+                    animation="border"
+                    role="status"
+                    variant="dark"
+                  >
+                    <span className="sr-only">Loading...</span>
+                  </Spinner>
+                </div>
               </Card>
-            ))}
+            ) : (
+              testimonial.map((listTestimonial) => (
+                <Card className="bg-white border-0 pb-5">
+                  <Card.Body className="text-left pt-2">
+                    <Card.Title className="ContentTitle">
+                      {listTestimonial.by}
+                    </Card.Title>
+                    <Card.Text className="ContentContent">
+                      {listTestimonial.testimony}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              ))
+            )}
           </Col>
           <Col className="Button ButtonRight">
             <img

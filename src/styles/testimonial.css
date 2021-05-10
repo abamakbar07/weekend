@@ -4,6 +4,7 @@
    font-style: normal;
    line-height: normal;
    background: linear-gradient(180deg, var(--bgmain) 50%, var(--bgsecond) 50%);
+   padding-bottom: 67px;
 }
 
 .Testimonial .Title {
@@ -75,6 +76,17 @@
    font-weight: normal;
    letter-spacing: -0.43px;
    color: var(--second);
+}
+
+.Testimonial .Loading {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.Testimonial .Loading {
+   width: 100%;
 }
 
 @media only screen and (max-width: 600px) {

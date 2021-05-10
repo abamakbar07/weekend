@@ -1,52 +1,55 @@
-import React from 'react'
-import { Card, Col, Container } from 'react-bootstrap'
+import React, { useEffect, useState } from 'react'
+import { Card, Col, Container, Spinner } from 'react-bootstrap'
 import "../styles/helptips.css"
 import arrowButton from '../assets/oval-icon.svg'
-import image1 from '../assets/helpTips/start/image.png'
-import image2 from '../assets/helpTips/quick/image.png'
-import image3 from '../assets/helpTips/denounce/image.png'
+import { API } from '../config/api'
 
 const Helptips = () => {
-   return (
-     <div className="Helptips text-center">
-       <div className="Title">Help & Tips</div>
-       <Container className="Container pt-4">
-         <Col>
-           <Card className="bg-dark text-white">
-             <Card.Img src={image1} alt="Card image" />
-             <Card.ImgOverlay>
-               <Container className="tittle">
-                 <Card.Title>Start quickly with simple steps</Card.Title>
-                 <img className="ml-auto" src={arrowButton} />
-               </Container>
-             </Card.ImgOverlay>
-           </Card>
-         </Col>
-         <Col>
-           <Card className="bg-dark text-white">
-             <Card.Img src={image2} alt="Card image" />
-             <Card.ImgOverlay>
-               <Container className="tittle">
-                 <Card.Title>Run smoothly at vero eos et accusamus</Card.Title>
-                 <img className="ml-auto" src={arrowButton} />
-               </Container>
-             </Card.ImgOverlay>
-           </Card>
-         </Col>
-         <Col>
-           <Card className="bg-dark text-white">
-             <Card.Img src={image3} alt="Card image" />
-             <Card.ImgOverlay>
-               <Container className="tittle">
-                 <Card.Title>Denounce with righteous indignation</Card.Title>
-                 <img className="ml-auto" src={arrowButton} />
-               </Container>
-             </Card.ImgOverlay>
-           </Card>
-         </Col>
-       </Container>
-     </div>
-   );
+  const [loading, setLoading] = useState(true)
+  const [helptips, setHelptips] = useState()
+
+  const getHelptips = async () => {
+    try {
+      const result = await API.get('/help-tips')
+      setHelptips(result.data)
+      setLoading(false)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(() => {
+    getHelptips()
+  }, [])
+
+  return (
+    <div className="Helptips text-center">
+      <div className="Title">Help & Tips</div>
+      <Container className="Container pt-4">
+        {loading ? (
+          <Col className="Loading">
+            <Spinner animation="border" role="status" variant="primary">
+              <span className="sr-only">Loading...</span>
+            </Spinner>
+          </Col>
+        ) : (
+          helptips.map((data) => (
+            <Col>
+              <Card className="bg-dark text-white">
+                <Card.Img src={data.image} alt="Card image" />
+                <Card.ImgOverlay>
+                  <Container className="tittle">
+                    <Card.Title>{data.title}</Card.Title>
+                    <img className="ml-auto" src={arrowButton} />
+                  </Container>
+                </Card.ImgOverlay>
+              </Card>
+            </Col>
+          ))
+        )}
+      </Container>
+    </div>
+  );
 }
 
 export default Helptips

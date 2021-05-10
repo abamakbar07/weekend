@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { testimonial, submain } from './data/content'
+import { submain } from './data/content'
 
 import Footer from './pages/Footer';
 import Header from './pages/Header';
@@ -9,9 +10,11 @@ import Main from './pages/Main';
 import Testimonial from './pages/Testimonial';
 import Definition from './pages/Definition';
 import Helptips from './pages/Helptips';
+import { API } from './config/api';
 
 
 function App() {
+  
   return (
     <div className="App">
       <Header />
@@ -20,7 +23,7 @@ function App() {
 
       <Definition />
 
-      <Testimonial title="Testimonial" content={testimonial} />
+      <Testimonial />
 
       <Submain 
         title={submain[0].title} 

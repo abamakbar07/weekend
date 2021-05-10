@@ -1,23 +1,5 @@
 import lego3 from '../assets/lego3/group-3.png'
 
-export const testimonial = [
-  {
-    title: "Blu Kicks",
-    content:
-      "Places where you can leverage tools and software to free up time to focus on growing the business.",
-  },
-  {
-    title: "Angelus",
-    content:
-      "All those apps took me months to get running. Now the site practically runs itself!",
-  },
-  {
-    title: "SoYoung",
-    content:
-      "Unless you have a truly unique product, it will be very hard to differentiate and gain brand traction",
-  },
-];
-
 export const submain = [
   {
     title: "POV",
