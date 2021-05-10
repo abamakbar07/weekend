@@ -1,11 +1,10 @@
 .Footer {
    height: 67px;
    color: white;
-   font-family: 'Work Sans', sans-serif;
    font-stretch: normal;
    font-style: normal;
    line-height: normal;
-   background-color: #0b24fb;
+   background-color: var(--rich-blue);
 }
 
 .Container {
@@ -32,7 +31,7 @@
 
 
 .Rectengle {
-   width: 126px;
+   width: 136px;
    height: 24px;
    padding: 3px 10px 5px;
    border-radius: 12px;
@@ -40,11 +39,17 @@
 }
 
 .alpha-version-01 {
-   width: 106px;
+   width: 116px;
    height: 16px;
    font-size: 14px;
-   font-weight: 300;
+   font-weight: unset;
    letter-spacing: normal;
    text-align: center;
    color: #fff;
 }
+
+/* @media only screen and (max-width: 600px) {
+   .Footer {
+
+   }
+} */

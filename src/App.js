@@ -57,7 +57,7 @@ function App() {
         content="The wise man therefore always holds in these matters to this principle of selection."
       />
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
