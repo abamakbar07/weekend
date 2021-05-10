@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Card, Col, Container } from 'react-bootstrap';
 import "../styles/testimonial.css"
 import arrowButton from '../assets/oval-icon.svg'
+import oval from '../assets/oval.svg'
 
 const Testimonial = (props) => {
    const testimonial = props.content
@@ -39,7 +40,12 @@ const Testimonial = (props) => {
    
    return (
      <div className="Testimonial text-center">
-       <div className="Title">{props.title}</div>
+       {/* <img className="Oval" src={oval} /> */}
+       <div className="Title">
+         <div className="text">
+           {props.title} 
+         </div>
+       </div>
        <div className="Content text-white">
          <Container fluid className="d-flex p-0">
            <Col className="Button ButtonLeft">
