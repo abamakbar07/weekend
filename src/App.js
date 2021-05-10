@@ -1,6 +1,7 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import lego3 from './assets/lego3/group-3.png'
+import { testimonial, submain } from './data/content'
+
 import Footer from './pages/Footer';
 import Header from './pages/Header';
 import Submain from './pages/Submain';
@@ -11,24 +12,6 @@ import Helptips from './pages/Helptips';
 
 
 function App() {
-  const testimonial = [
-    {
-      title: "Blu Kicks",
-      content:
-        "Places where you can leverage tools and software to free up time to focus on growing the business.",
-    },
-    {
-      title: "Angelus",
-      content:
-        "All those apps took me months to get running. Now the site practically runs itself!",
-    },
-    {
-      title: "SoYoung",
-      content:
-        "Unless you have a truly unique product, it will be very hard to differentiate and gain brand traction",
-    },
-  ];
-
   return (
     <div className="App">
       <Header />
@@ -39,22 +22,22 @@ function App() {
 
       <Testimonial title="TESTIMONIAL" content={testimonial} />
 
-      <Submain
-        title="POV"
-        content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nesciunt quaerat sequi perferendis facere corrupti odio temporibus consequuntur, modi sapiente autem obcaecati quam vel ratione ea dolorem ut explicabo laudantium."
+      <Submain 
+        title={submain[0].title} 
+        content={submain[0].content} 
       />
 
-      <Submain
-        title="Resource"
-        content="These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best"
+      <Submain 
+        title={submain[1].title} 
+        content={submain[1].content}
       />
 
       <Helptips />
 
       <Submain
-        image={lego3}
-        title="You’re all set."
-        content="The wise man therefore always holds in these matters to this principle of selection."
+        image={submain[2].image}
+        title={submain[2].title}
+        content={submain[2].content}
       />
 
       <Footer />
