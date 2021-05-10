@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { submain } from './data/content'
@@ -10,7 +9,6 @@ import Main from './pages/Main';
 import Testimonial from './pages/Testimonial';
 import Definition from './pages/Definition';
 import Helptips from './pages/Helptips';
-import { API } from './config/api';
 
 
 function App() {
